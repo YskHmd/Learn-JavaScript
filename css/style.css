@@ -3,6 +3,13 @@ h1{
     font: size 24px; 
     margin: 0px;
 }
+div.content{
+    background-color: #bbe0b3;
+    width: 600px;
+    margin: 10px auto;
+    border: 3px solid #120808d1;
+    padding: 8px
+}
 
 p{
     font-size:12px;
