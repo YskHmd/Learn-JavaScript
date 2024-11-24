@@ -28,10 +28,13 @@ header h1{
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, .3)
 }
-
 .description img{
     float: left;
     margin: 0 10px 10px 0;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 h2{
     clear:left;
@@ -87,6 +90,10 @@ footer{
     font-size: .8em;
     padding: 5px;
 }
+.description img:hover{
+    opacity: 0.5;
+}
+
 @media screen and (max-width: 600px){
     .description img{
         float: none;
