@@ -8,12 +8,9 @@
 </head>
 <body>
     <script>
-        const num1 = window.prompt('数字を入力してください');
-        const ans = Number(num1) + 10;
-        document.write(num1 + '+10=' + ans);
-
-        const num2 = 10;
-        const string1 = String(num2);
+        const getDice = () => Math.floor(Math.random() * 6) +1 ;
+        dice = getDice()
+        document.write(dice);
     </script>
 </body>
 </html>
