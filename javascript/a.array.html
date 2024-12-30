@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript入門</title>
+</head>
+<body>
+    <script>
+        const pref ={//中カッコで囲う
+            'hokkaidou':'北海道',//:辞書型
+            'aomori':'青森',
+            'iwate':'岩手',
+        };
+        for (key in pref){
+            document.write(pref[key]);
+        }
+
+        for (name of pref){
+            document.write(name + '<br>');
+        }
+        // for (変数of配列){
+        //     繰り返したい処理
+        // }
+        pref.forEach((name) =>{
+            document.write(name + '<br>');
+        })
+        //結果は同じ書き方が違う
+    </script>
+</body>
+</html>
